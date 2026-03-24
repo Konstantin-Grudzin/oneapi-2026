@@ -627,6 +627,7 @@ std::vector<float> JacobiKokkos(
 |3822B1FI3|frolova_elizaveta|2.2278|2|
 |3822B1FI3|kolodkin_grigorii|2.3206|1|
 |3822B1FI1|ionova_ekaterina|2.3228|6|
+|3822B1FI1|drozhdinov_dmitriy|2.3230|7|
 |3822B1FI1|shulpin_ilya|2.9876|4|
 
 ## 9_jacobi_kokkos (4096 elements)
@@ -650,12 +651,12 @@ std::vector<float> JacobiKokkos(
 |-----|----|------|-----|
 |3822B1FI1|beskhmelnova_kseniya|**9/9**|**543**|
 |3822B1FI1|chistov_alexey|**9/9**|**548**|
-|3822B1FI1|drozhdinov_dmitriy|7/9|395|
+|3822B1FI1|drozhdinov_dmitriy|8/9|448|
 |3822B1FI1|ionova_ekaterina|2/9|106|
 |3822B1FI1|kabalova_valeria|2/9|116|
 |3822B1FI1|mironov_arseniy|1/9|57|
 |3822B1FI1|rezantseva_anastasia|**9/9**|**527**|
-|3822B1FI1|shulpin_ilya|5/9|271|
+|3822B1FI1|shulpin_ilya|5/9|270|
 |3822B1FI1|shurigin_sergey|6/9|343|
 |3822B1FI1|solovev_alexey|**9/9**|**526**|
 
