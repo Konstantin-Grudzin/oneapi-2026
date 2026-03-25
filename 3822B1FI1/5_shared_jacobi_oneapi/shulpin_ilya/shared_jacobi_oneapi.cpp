@@ -43,7 +43,7 @@ std::vector<float> JacobiSharedONEAPI(
         {
             *max_diff_ptr = 0.0f;
 
-            sycl::buffer<float, 1> diff_buf{&max_diff, sycl::range<1>{1}};
+            sycl::buffer<float, 1> diff_buf{max_diff_ptr, sycl::range<1>{1}};
             q.submit([&](sycl::handler& h)
             {
                 auto red = sycl::reduction(diff_buf, h, sycl::maximum<float>());
@@ -76,12 +76,12 @@ std::vector<float> JacobiSharedONEAPI(
                     });
             }).wait();
 
+            std::swap(x_curr, x_next);
+
             if (*max_diff_ptr < accuracy)
             {
                 break;
             }
-
-            std::swap(x_curr, x_next);
         }
 
         std::vector<float> solution(n);
