@@ -1,9 +1,5 @@
 #include "acc_jacobi_oneapi.h"
 #include <cmath>
-#include <iostream>
-#include <chrono>
-#include <random>
-
 
 std::vector<float> JacobiAccONEAPI(
         const std::vector<float> a, const std::vector<float> b,
@@ -106,70 +102,3 @@ std::vector<float> JacobiAccONEAPI(
     
     return x_curr;
 }
-
-int main()
-{
-    const size_t N = 4096;          
-    const size_t NN = N * N;
-
-    std::vector<float> A(NN);
-    for (size_t i = 0; i < N; ++i) {
-        float row_sum = 0.0f;
-        for (size_t j = 0; j < N; ++j) {
-            if (i != j) {
-                A[i * N + j] = 1.0f;
-                row_sum += 1.0f;
-            }
-        }
-        A[i * N + i] = row_sum + 1.0f;
-    }
-
-    std::vector<float> b(N);
-    for (size_t i = 0; i < N; ++i)
-        b[i] = static_cast<float>(i) + 1.0f;
-// Получаем доступные устройства
-    auto platforms = sycl::platform::get_platforms();
-    std::vector<sycl::device> devices;
-    
-    for (auto& platform : platforms) {
-        auto platform_devices = platform.get_devices();
-        devices.insert(devices.end(), platform_devices.begin(), platform_devices.end());
-    }
-    
-    if (devices.empty()) {
-        std::cerr << "No SYCL devices found!" << std::endl;
-        return 1;
-    }
-    
-    std::cout << "\nAvailable devices:" << std::endl;
-    for (size_t i = 0; i < devices.size(); i++) {
-        std::cout << i << ": " << devices[i].get_info<sycl::info::device::name>() << std::endl;
-    }
-    
-    // Используем первое устройство (обычно GPU если доступно)
-    sycl::device device = devices[0];
-    std::cout << "\nUsing device: " << device.get_info<sycl::info::device::name>() << std::endl;
-    float accuracy = 1e-5f;
-
-    auto start = std::chrono::high_resolution_clock::now();
-
-    auto solution = JacobiAccONEAPI(A, b, accuracy, device);
-
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> elapsed = end - start;
-
-    std::cout << "Jacobi method finished in " << elapsed.count() << " seconds\n";
-
-    std::cout << std::fixed;
-    std::cout.precision(6);
-    std::cout << "Solution sample: ";
-    for (int i = 0; i < std::min<size_t>(10, solution.size()); ++i) {
-        std::cout << solution[i] << " ";
-    }
-    std::cout << "\n";
-
-    return 0;
-}
-
-
-
