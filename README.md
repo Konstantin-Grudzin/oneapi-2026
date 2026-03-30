@@ -496,9 +496,9 @@ std::vector<float> JacobiKokkos(
 |3822B1FI3|kolodkin_grigorii|0.2419|2|
 |3822B1FI2|yasakova_tanya|0.2451|2|
 |**REF**|**REF**|**0.2492**|**-**|
+|3822B1FI1|mironov_arseniy|0.2517|10|
 |3822B1FI1|ionova_ekaterina|0.2542|9|
 |3822B1FI3|chizhov_maxim|0.3237|7|
-|3822B1FI1|mironov_arseniy|TEST FAILED|-|
 
 ## 2_integral_oneapi (65536 elements)
 |Group|Name|Result|Rank|
@@ -517,10 +517,10 @@ std::vector<float> JacobiKokkos(
 |3822B1FI3|lysov_ivan|0.8516|5|
 |3822B1FI3|lopatin_ilya|0.9945|1|
 |3822B1FI1|drozhdinov_dmitriy|0.9980|6|
+|3822B1FI1|mironov_arseniy|0.9988|10|
 |3822B1FI2|bessonov_egor|1.0007|1|
 |3822B1FI3|kholin_kirill|1.0007|4|
 |3822B1FI1|shulpin_ilya|1.0230|8|
-|3822B1FI1|mironov_arseniy|TEST FAILED|-|
 
 ## 3_acc_jacobi_oneapi (4096 elements)
 |Group|Name|Result|Rank|
@@ -572,6 +572,7 @@ std::vector<float> JacobiKokkos(
 |3822B1FI1|ionova_ekaterina|0.2024|8|
 |3822B1FI1|shulpin_ilya|0.2351|7|
 |3822B1FI2|bessonov_egor|0.2362|1|
+|3822B1FI1|mironov_arseniy|0.2412|9|
 |**REF**|**REF**|**0.2633**|**-**|
 |3822B1FI1|shurigin_sergey|0.2827|5|
 |3822B1FI3|lysov_ivan|0.2910|4|
@@ -583,7 +584,6 @@ std::vector<float> JacobiKokkos(
 |3822B1FI3|lopatin_ilya|0.3664|3|
 |3822B1FI3|kolodkin_grigorii|0.4017|1|
 |3822B1FI3|frolova_elizaveta|0.4647|2|
-|3822B1FI1|mironov_arseniy|BUILD FAILED|-|
 
 ## 6_block_gemm_oneapi (3072 elements)
 |Group|Name|Result|Rank|
@@ -661,16 +661,16 @@ std::vector<float> JacobiKokkos(
 ## 3822B1FI1
 |Group|Name|Passed|Score|
 |-----|----|------|-----|
-|3822B1FI1|beskhmelnova_kseniya|**9/9**|**534**|
+|3822B1FI1|beskhmelnova_kseniya|**9/9**|**533**|
 |3822B1FI1|chistov_alexey|**9/9**|**541**|
-|3822B1FI1|drozhdinov_dmitriy|8/9|442|
-|3822B1FI1|ionova_ekaterina|7/9|373|
+|3822B1FI1|drozhdinov_dmitriy|8/9|441|
+|3822B1FI1|ionova_ekaterina|7/9|372|
 |3822B1FI1|kabalova_valeria|2/9|116|
-|3822B1FI1|mironov_arseniy|1/9|55|
+|3822B1FI1|mironov_arseniy|4/9|201|
 |3822B1FI1|rezantseva_anastasia|**9/9**|**522**|
-|3822B1FI1|shulpin_ilya|**9/9**|**494**|
-|3822B1FI1|shurigin_sergey|**9/9**|**504**|
-|3822B1FI1|solovev_alexey|**9/9**|**517**|
+|3822B1FI1|shulpin_ilya|**9/9**|**493**|
+|3822B1FI1|shurigin_sergey|**9/9**|**503**|
+|3822B1FI1|solovev_alexey|**9/9**|**516**|
 
 Passed: 6
 
