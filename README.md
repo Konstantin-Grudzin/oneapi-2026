@@ -519,6 +519,7 @@ std::vector<float> JacobiKokkos(
 |Group|Name|Result|Rank|
 |-----|----|------|----|
 |3822B1FI3|sozonov_ilya|0.0008|9|
+|3822B1FI1|vershinina_olga|0.0012|15|
 |3822B1FI1|suvorov_dmitrii|0.0024|13|
 |3822B1FI1|chistov_alexey|0.4474|3|
 |**REF**|**REF**|**0.4723**|**-**|
@@ -585,6 +586,7 @@ std::vector<float> JacobiKokkos(
 |3822B1FI1|drozhdinov_dmitriy|0.5052|2|
 |3822B1FI1|suvorov_dmitrii|BUILD FAILED|-|
 |3822B1FI1|ivanov_mikhail|TEST FAILED|-|
+|3822B1FI1|vershinina_olga|TEST FAILED|-|
 |3822B1FI2|guseynov_emil|TOO SLOW|-|
 |3822B1FI2|vyunova_ekaterina|BUILD FAILED|-|
 
@@ -728,8 +730,8 @@ std::vector<float> JacobiKokkos(
 |3822B1FI3|lysov_ivan|0.0002|7|
 |3822B1FI3|lopatin_ilya|0.0005|3|
 |3822B1FI2|plekhanov_daniil|0.0005|5|
-|3822B1FI1|suvorov_dmitrii|0.0006|11|
 |3822B1FI3|ekaterina_kozlova|0.0006|5|
+|3822B1FI1|suvorov_dmitrii|0.0006|11|
 |3822B1FI1|solovev_alexey|0.0006|3|
 |3822B1FI1|chistov_alexey|0.0009|1|
 |3822B1FI1|rezantseva_anastasia|0.0010|5|
@@ -787,21 +789,21 @@ std::vector<float> JacobiKokkos(
 ## 3822B1FI1
 |Group|Name|Passed|Score|
 |-----|----|------|-----|
-|3822B1FI1|beskhmelnova_kseniya|**9/9**|**512**|
-|3822B1FI1|chistov_alexey|**9/9**|**519**|
-|3822B1FI1|drozhdinov_dmitriy|**9/9**|**470**|
-|3822B1FI1|grudzin_konstantin|5/9|244|
-|3822B1FI1|ionova_ekaterina|**9/9**|**458**|
-|3822B1FI1|ivanov_mikhail|6/9|291|
-|3822B1FI1|kabalova_valeria|2/9|110|
-|3822B1FI1|kurakin_matvey|**9/9**|**440**|
-|3822B1FI1|mironov_arseniy|**9/9**|**453**|
-|3822B1FI1|rezantseva_anastasia|**9/9**|**504**|
-|3822B1FI1|shulpin_ilya|**9/9**|**472**|
-|3822B1FI1|shurigin_sergey|**9/9**|**477**|
-|3822B1FI1|solovev_alexey|**9/9**|**492**|
-|3822B1FI1|suvorov_dmitrii|6/9|307|
-|3822B1FI1|vershinina_olga|1/9|41|
+|3822B1FI1|beskhmelnova_kseniya|**9/9**|**511**|
+|3822B1FI1|chistov_alexey|**9/9**|**518**|
+|3822B1FI1|drozhdinov_dmitriy|**9/9**|**469**|
+|3822B1FI1|grudzin_konstantin|5/9|243|
+|3822B1FI1|ionova_ekaterina|**9/9**|**457**|
+|3822B1FI1|ivanov_mikhail|6/9|290|
+|3822B1FI1|kabalova_valeria|2/9|109|
+|3822B1FI1|kurakin_matvey|**9/9**|**439**|
+|3822B1FI1|mironov_arseniy|**9/9**|**452**|
+|3822B1FI1|rezantseva_anastasia|**9/9**|**503**|
+|3822B1FI1|shulpin_ilya|**9/9**|**471**|
+|3822B1FI1|shurigin_sergey|**9/9**|**476**|
+|3822B1FI1|solovev_alexey|**9/9**|**491**|
+|3822B1FI1|suvorov_dmitrii|6/9|306|
+|3822B1FI1|vershinina_olga|2/9|91|
 
 Passed: 10
 
